@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        .product-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-rows: 500px 500px 500px;
+            gap: 10px;
+        }
+        .product-card{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border-radius: 6px;
+        }
+        
+        .product-image {
+            max-height: 200px;
+            overflow: hidden;
+        }
+        .product-image img {
+             width: 100%;
+             height: 100%;
+            object-fit: cover;
+         }
+        .product-details {
+            padding: 20px;
+        }
+
+        .title {
+             font-size: 1.2rem;
+             margin-bottom: 10px;
+        }
+
+        .description {
+             color:blue;
+             margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333;
+         }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; background-color: black; color:white;">Hand-Bags</h1>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT20CjwBlxyBB_OetAiVzx9Mse0GZBeHbjBcA&usqp=CAU" alt="Handbag-1">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">200$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYnPYQW2WJrGrJTq758YZxYqNkiYnB2RIM3g&usqp=CAU" alt="Handbag-2">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">300$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0kJQjWIzBXyTC3Xi_lAL9Vb_okaSEbk2EQ&usqp=CAU" alt="Handbag-2">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">500$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL2wxphaH24vIaad5gDXVzq1iB8feap2qksMqRDS5vixi6aTazpL-SxOGZ6BD8J_n--ug&usqp=CAU" alt="Handbag-2">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">700$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7pqIjcF0NrdasXGW0Z8VciM7DNckbie9cRA&usqp=CAU" alt="Handbag-1">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">200$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTELdFqfmIxt1ILpRRN0-BncUZy6KyhdDeVSw&usqp=CAU" alt="Handbag-2">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">300$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm0Ya_YpvjfN7chPMZEYeRPgqvlnQ_Vri6iQ&usqp=CAU" alt="Handbag-2">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">500$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvgRDOGSeH90kXVCNOHmJvJm0StJx5Pc69ZYaMJrYP4S-hsLWePOyRdLIrUxCuSwtQQSU&usqp=CAU" alt="Handbag-2">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">700$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT20CjwBlxyBB_OetAiVzx9Mse0GZBeHbjBcA&usqp=CAU" alt="Handbag-1">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">200$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYnPYQW2WJrGrJTq758YZxYqNkiYnB2RIM3g&usqp=CAU" alt="Handbag-2">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">300$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0kJQjWIzBXyTC3Xi_lAL9Vb_okaSEbk2EQ&usqp=CAU" alt="Handbag-2">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">500$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL2wxphaH24vIaad5gDXVzq1iB8feap2qksMqRDS5vixi6aTazpL-SxOGZ6BD8J_n--ug&usqp=CAU" alt="Handbag-2">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">700$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTELdFqfmIxt1ILpRRN0-BncUZy6KyhdDeVSw&usqp=CAU" alt="Handbag-2">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">300$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm0Ya_YpvjfN7chPMZEYeRPgqvlnQ_Vri6iQ&usqp=CAU" alt="Handbag-2">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">500$</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvgRDOGSeH90kXVCNOHmJvJm0StJx5Pc69ZYaMJrYP4S-hsLWePOyRdLIrUxCuSwtQQSU&usqp=CAU" alt="Handbag-2">
+                <div class="product-details">
+                    <div class="title">Hand-Bag</div>
+                    <div class="description">Black color with gold design</div>
+                    <div class="price">700$</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+/* .class:hover{
+    transition:opacity .3s
+}
+</style> */
+

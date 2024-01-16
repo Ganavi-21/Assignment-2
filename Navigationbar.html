@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <style>body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        min-height: 100vh;
+    }
+    
+    header {
+        background-color: #333;
+        color:white;
+        padding: 20px 40px;
+        text-align: center;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color:brown;
+        padding: 20px;
+        justify-content: center;
+        
+    }
+    
+    .nav-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-list li {
+        margin-right: 20px;
+    }
+    
+    .nav-list a {
+        text-decoration: none;
+        color:white;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    
+    .nav-list a:hover {
+        color:purple;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        margin-bottom:20px ;
+        flex-wrap: wrap;
+    }
+    #home{
+        background-color: red;
+        height: 200px;
+        margin-top: 20px;
+    }
+    #about{
+        background-color: blue;
+        height: 200px;
+    }
+    #services{
+        background-color: green;
+        height: 200px;
+    }
+    #contact{
+        background-color: yellow;
+        height: 200px;
+    }
+    
+    @media screen and (max-width: 1053px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .nav-list {
+            margin-top: 10px;
+        }
+    
+        .nav-list li {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header><h1>Welcome to our website</h1> </header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="home">Home</section>
+        <section id="about">About</section>
+        <section id="services">Services</section>
+        <section id="contact">Contact</section>
+   
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "main main"
+        "aside aside"
+        "footer footer";
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 200px 1fr;
+        min-height: 100vh;
+
+    }
+    header{
+        grid-area: header;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    nav{
+        grid-area: nav;
+        background-color:lightblue;
+        color:white;
+        padding: 10px;
+    }
+    main{
+        grid-area: main;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color:lightblue;
+        padding: 20px;
+    }
+    section{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .section-1 {
+    flex-basis: 100%;
+    }
+
+    .section-2 {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    img{
+        max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    }
+
+    article {
+    background-color: #fff;
+    border: 1px solid blue;
+    padding: 20px;
+    box-sizing: border-box;
+    }
+
+    aside {
+    grid-area: aside;
+    background-color: white;
+    padding: 20px;
+    }
+   
+    footer{
+        grid-area: footer;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>The Blond Abroad</h1>
+        </header>
+        <nav>
+          Navigation Bar
+        </nav>
+        <main >
+            <section class="section-1">
+                <article>
+                    <img src="https://images.squarespace-cdn.com/content/v1/5beb0a44f2e6b1113f9519d9/1617138340976-CP9P7EJR5H0GNOUKQRNI/Short+travel+quotes.jpg?format=2500w" alt="Travel-image1">
+                    <h2>Whereever we go!!!</h2>
+                    <p>The best travel quotes often come in pint-sized packages! That’s why I decided to compile this list of short travel quotes.
+                        Meaningful, memorable, and insightful, they tick all the right boxes - regardless of what you need them for.Without further ado, let’s dive into these 120 awesome short travel quotes for Instagram, inspiration, and beyond!</p>
+                </article>
+            </section>
+            <section class="section-2">
+                <article> 
+                    <img src="https://inkforall.com/wp-content/uploads/2022/09/d17212e4-bc12-7a4d-d956-b5681bf6bafd.jpeg" alt="Travel-image2">
+                    <h2>Travel the world</h2>
+                    <p>Everyone loves a good travel blog. Who wouldn’t, right? You get to travel the world through other people’s lenses. Also, you get to see so many beautiful places without ever having to leave your home.</p>
+                </article>
+                <article>
+                    <img src="https://images.squarespace-cdn.com/content/v1/643c7af9ff8f6809ed0a478c/fa6c052e-1709-43e1-a19b-2ce2a5f4a47e/travel-writing.jpg?format=1500w">
+                    <h2>Make memories</h2>
+                    <p>The first ever travel writer might have been the Greek geographer Pausanias, who wrote Hellados Periegesis, or Description of Greece – what is now considered to be the oldest guidebook ever written; the first tome of the travel literature genre. 
+                        Over the centuries since, travel writers have written for glossy magazines or the dun-coloured pages of memoirs. Their words were made concrete in print, shared with readers who held physical paper and spent more than just eight seconds looking at an article.</p>
+                </article>
+            </section>
+        </main>
+        <aside></aside>
+        <footer>2024 Travel Magzine</footer>
+    </div>
+</body>
+</html>
