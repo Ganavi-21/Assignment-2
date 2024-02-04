@@ -84,3 +84,48 @@ function logElement(element, index, array) {
 myForEach(nums, logElement);
 
 ///////////////////////////////////////////////////////////////////////////////
+//5.Function Composition
+function compose(func1, func2) {
+    return function (x) {
+      return func2(func1(x));
+    };
+  }
+  function square(x) {
+    return x * x;
+  }
+  function double(x) {
+    return x * 2;
+  }
+  const composedFunction = compose(square,double);
+  console.log(composedFunction(2));  
+
+//6.Chaining Functions
+function chainFunctions(functions) {
+    return function (x,y) {
+      let result = functions[0](x,y);
+      for (let i = 1; i < functions.length; i++) {
+        result = functions[i](result);
+      }
+      return result;
+    };
+  }
+  function add(x, y) {
+    return x + y;
+  }
+  function double(x) {
+    return x * 2;
+  }
+  function square(x) {
+    return x * x;
+  }
+  const chainedFunction = chainFunctions([add, double, square]);
+  const result = chainedFunction(1, 2); 
+  console.log(result);
+
+//7.Higher-Order Function Practice
+const numarr = [44,87,99,78,54,33];
+const sumOfSquaresOfEvenNumbers = numarr
+  .filter(number => number % 2 === 0)
+  .map(evenNumber => evenNumber ** 2) 
+  .reduce((sum, squaredNumber) => sum + squaredNumber, 100);
+console.log(sumOfSquaresOfEvenNumbers);
