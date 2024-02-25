@@ -129,3 +129,5 @@ const sumOfSquaresOfEvenNumbers = numarr
   .map(evenNumber => evenNumber ** 2) 
   .reduce((sum, squaredNumber) => sum + squaredNumber, 100);
 console.log(sumOfSquaresOfEvenNumbers);
+
+
