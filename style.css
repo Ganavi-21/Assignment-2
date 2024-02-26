@@ -364,13 +364,7 @@ body {
     width: 75%;
 }
 
-.progress-line.java span {
-    width: 50%;
-}
 
-.progress-line.cpls span {
-    width: 50%;
-}
 
 .progress-line span::after {
     position: absolute;
@@ -397,13 +391,7 @@ body {
     content: "75%";
 }
 
-.progress-line.java span::after {
-    content: "50%";
-}
 
-.progress-line.cpls span::after {
-    content: "50%";
-}
 
 .progress-line span::before {
     content: "";
@@ -659,43 +647,48 @@ button[type="submit"]:hover {
 }
 
 
-
+/* radial bar for problem solving */
 @keyframes animate-path1 {
     100% {
         stroke-dashoffset: 180;
     }
 }
 
+/* radial bar for creativity */
 @keyframes animate-path2 {
     100% {
         stroke-dashoffset: 140;
     }
 }
 
+/* radial bar for communication */
 @keyframes animate-path3 {
     100% {
         stroke-dashoffset: 90;
     }
 }
 
+/* radial bar for teamwork */
 @keyframes animate-path4 {
     100% {
         stroke-dashoffset: 50;
     }
 }
 
-@keyframes animate-bar {
+/* @keyframes animate-bar {
     100% {
         stroke-dashoffset: -1;
     }
-}
+} */
 
+/* for text of html,css,js */
 @keyframes showText {
     100% {
         opacity: 1;
     }
 }
 
+/* for bar graph of html,css,javascript */
 @keyframes animate {
 
     100% {
@@ -703,6 +696,7 @@ button[type="submit"]:hover {
     }
 }
 
+/* for portfolio */
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
@@ -715,6 +709,8 @@ button[type="submit"]:hover {
     }
 }
 
+
+/* for i am an engineer */
 @keyframes slideTop {
     0% {
         transform: translateX(100px);
@@ -727,6 +723,8 @@ button[type="submit"]:hover {
     }
 }
 
+
+/* for its me  */
 @keyframes slideBottom {
     0% {
         transform: translateX(-100px);
@@ -739,6 +737,9 @@ button[type="submit"]:hover {
     }
 }
 
+
+
+/*for home about skills contact */
 @keyframes slideUP {
     0% {
         transform: translateY(50px);
@@ -834,7 +835,7 @@ button[type="submit"]:hover {
         font-size: 18px;
         font-weight: 200;
     }
-    .img{
+    /* .img{
         max-width: 400px;
         position: relative;
         left: -10%;
@@ -842,7 +843,7 @@ button[type="submit"]:hover {
         padding-bottom: 30px;
         padding-left: 0;
         margin-left: 0;
-    }
+    } */
     .btn-box:hover {
         box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
     }
