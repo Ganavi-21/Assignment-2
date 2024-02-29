@@ -1,0 +1,175 @@
+<!-- 17) Create a TO-do list application add the functionlity to add,remove and edit make sure the application is responsive should have a good styling -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      input[type="text"] {
+        width: 70%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+      }
+
+      button {
+        padding: 8px 15px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-left: 20px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 5px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 3px;
+        overflow: hidden;
+      }
+
+      li button {
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        float: right;
+        margin: 0px 1px 4px 3px
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To Do List</h1>
+      <input type="text" id="taskInput" placeholder="Add a new task" />
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList">
+    
+      </ul>
+    </div>
+
+    <script>
+        function addTask() {
+    var taskInput = document.getElementById("taskInput");
+    var taskList = document.getElementById("taskList");
+    
+    if (taskInput.value.trim() === "") {
+        alert("Please enter a task.");
+        return;
+    }
+    
+    var li = document.createElement("li");
+    var taskText = document.createElement("span");
+    taskText.textContent = taskInput.value;
+
+    var editIcon = document.createElement("button");
+    editIcon.textContent = "Edit";
+    editIcon.style.backgroundColor="grey"
+    editIcon.style.cursor = "pointer";
+    editIcon.style.marginRight = "5px";
+    editIcon.onclick = function() {
+        var newText = prompt("Edit task:", taskText.textContent);
+        if (newText !== null) {
+            taskText.textContent = newText;
+        }
+    };
+
+    var deleteIcon = document.createElement("button");
+    deleteIcon.textContent = "delete";
+    deleteIcon.style.cursor = "pointer";
+    deleteIcon.onclick = function() {
+        taskList.removeChild(li);
+    };
+
+    
+    li.appendChild(taskText);
+    li.appendChild(editIcon);
+    li.appendChild(deleteIcon);
+    taskList.appendChild(li);
+    
+    taskInput.value = "";
+}
+
+    </script>
+  </body>
+</html> -->
+
+
+
+
+
+<!-- 18) Fetch an Api and render few datas on the screen in table format -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <table id="dataTable" border="2">
+         <thead>
+         <tr>
+             <th>Title</th>
+             <th>Price</th>
+         </tr>
+     </thead>
+     <tbody id="tableBody">
+
+     </tbody>
+     </table>
+     <script>
+         document.addEventListener("DOMContentLoaded", function () {
+             fetchData();
+         });
+         function fetchData(){
+             fetch('https://fakestoreapi.com/products')
+             .then(response=>response.json())
+             .then(data=>
+             displayData(data))
+             .catch(error=>console.log("error",error))
+         }
+       function displayData(data){
+             let tableBody=document.getElementById("tableBody")
+             data.forEach(item => {
+                 const row=document.createElement("tr")
+                row.innerHTML=`<td>${item.title}</td>
+                                 <td>${item.price}</td>`
+                                 tableBody.appendChild(row);
+             });
+         }
+     </script>
+ </body>
+</html> -->
+
+
+
+
