@@ -36,7 +36,7 @@
 // 2) Sort an array without using built in methods
 // function sort(array){
 //     let sortArr=[]
-//     temp = -Infinity
+//     temp = 0
 //     for(i=0;i<array.length;i++){
 //         for(j=i+1;j<array.length;j++){
 //             if(arr[i]>arr[j]){
@@ -50,6 +50,7 @@
 //         return sortArr
 //     }
 //     console.log(sort(arr));
+
 
 // 3) write a function to remove the duplicate element from an array
 // let arr=[3,5,6,7,9,9,6,4,2,2,4,6,7,0]
@@ -125,6 +126,21 @@
 //     return flatArr
 // }
 // console.log(flat(arr));
+// let arr=["hi","hello",["jjj",["jsah","sjadh"],"dhg"]]
+// function flatArr(arr){
+//     flatten=[]
+//     for(el of arr){
+//             if(Array.isArray(el)){
+//                 flatten.push(flatArr(el))
+//             }
+//             else{
+//                 flatten.push(el)
+//             }
+//     }
+//     return flatten;
+// }
+// console.log(flatArr(arr))
+
 
 // 8) Write a function to find the 2nd largest number in a nested array
 
@@ -149,12 +165,40 @@
 // }
 // secLargest(arr)
 
-// 9) write a function to generate below pattern
+
+// 9. write a function to generate below pattern
 // 	1
 // 	2 9
 // 	3 8 10
 // 	4 7 11 14
 // 	5 6 12 13 15
+// function pattern(n){
+//     let str=``
+//     for ( i=1;i<=n;i++){
+//         for( j=1;j<=i;j++){
+//             if(j===1){
+//                 str+=i
+//             }
+//             else if(j%2 ==0){
+//                 str+="  "+(getLastVal(n,j-1)+(n-i)+1)
+//             }
+//             else {
+//                 str+= "  "+(getLastVal(n,j-1)+(i-j)+1)
+//             }
+//         }
+//         str+= "\n"
+//     }
+//     console.log(str);
+// }
+// function getLastVal(n,col){
+//     let val = n;
+//     for(let i=1;i<col;i++){
+//         n+=val-1
+//         val--
+//     }
+//     return n
+// }
+// pattern(5)
 
 
 // 10)program for adding zeros after 3 values in array
